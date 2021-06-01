@@ -2,7 +2,7 @@
 * 覆蓋 Bootstrap 預設樣式
 ************************************************************/
 :root {
-	--primary: #c60013;
+	--primary: #820003;
 }
 .bg-primary {
 	background-color: var(--primary) !important;
@@ -55,25 +55,50 @@ p:last-child {
 
 a {
     color: #999;
-    text-decoration: underline;
+    text-decoration: none;
 	}
-	
+a:hover {
+	color: var(--primary);
+	text-decoration: none;
+}
 ul {
 	list-style: none;
 }
 li {
-	position: relative;
-	margin-top:1rem;
+	position: reltive;
+	margin-top: 0.5rem;
 }
 li:first-child {
 	margin-top: 0;
 }
 main section.alt {
-	background: #f0eeeb;
+	background: rgb(249,250,250)
 }
 header .container, main .container {
 	position: relative;
 	max-width: 1120px;
+}
+.text-underline {
+	text-decoration: underline;
+}
+.countdown {
+	background:  url(../images/countdown-pc.jpg) center center no-repeat;
+	padding: 10px 0;
+}
+#header-form {
+	width: calc(680 / 1920 * 100%);
+	position: absolute;
+	left: calc(800 / 1920 * 100%);
+	top: calc(1130 / 1435 * 100%);
+}
+.form-text {
+	font-size:  0.75rem;
+}
+#footer-form {
+	width: calc(680 / 1920 * 100%);
+	position: absolute;
+	left: calc(800 / 1920 * 100%);
+	top: calc(450 / 750 * 100%);
 }
 .check-circle {
 	/*margin-left: 6rem;*/
@@ -154,6 +179,27 @@ footer p:last-child {
 @media (max-width: 768px) {
 	body {
 		font-size: 0.95rem;
+	}
+	#header-form {
+		padding: 0 1rem;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: calc(1560 / 1969 * 100%);
+	}
+	#header-form.off {
+		top: calc(1410 / 1822 * 100%);
+	}
+	.form-text {
+		font-size:  1rem;
+		padding: 0 20%;
+	}
+	#footer-form {
+		padding: 0 1rem;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: calc(920 / 1265 * 100%);
 	}
 	.card-body {
 		padding: 1.5rem;
