@@ -66,7 +66,6 @@ ul {
 }
 li {
 	position: reltive;
-	margin-top: 0.5rem;
 }
 li:first-child {
 	margin-top: 0;
@@ -82,23 +81,44 @@ header .container, main .container {
 	text-decoration: underline;
 }
 .countdown {
-	background:  url(../images/countdown-pc.jpg) center center no-repeat;
+	background: #00f url(../images/countdown-pc.jpg) center center;
 	padding: 10px 0;
+	color: #ffed78;
+	font-size: 1.25rem;
 }
 #header-form {
 	width: calc(680 / 1920 * 100%);
 	position: absolute;
 	left: calc(800 / 1920 * 100%);
-	top: calc(1130 / 1435 * 100%);
+	top: calc(1090 / 1435 * 100%);
 }
 .form-text {
 	font-size:  0.75rem;
+}
+.img-text {
+	width:  100%;
+	padding: 5%;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:  55%;
+}
+#bonus {
+	background: #e0e1df;
 }
 #footer-form {
 	width: calc(680 / 1920 * 100%);
 	position: absolute;
 	left: calc(800 / 1920 * 100%);
 	top: calc(450 / 750 * 100%);
+}
+.chapter-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size:  80%;
 }
 .check-circle {
 	/*margin-left: 6rem;*/
@@ -176,7 +196,7 @@ footer p:last-child {
 	margin: 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
 	body {
 		font-size: 0.95rem;
 	}
@@ -185,21 +205,25 @@ footer p:last-child {
 		width: 100%;
 		position: absolute;
 		left: 0;
-		top: calc(1560 / 1969 * 100%);
+		top: calc(1540 / 1969 * 100%);
 	}
 	#header-form.off {
-		top: calc(1410 / 1822 * 100%);
+		top: calc(1390 / 1822 * 100%);
 	}
 	.form-text {
 		font-size:  1rem;
-		padding: 0 20%;
+		/*padding: 0 20%;*/
+		padding-left:  10%;
+	}
+	#bonus {
+		background: #fff;
 	}
 	#footer-form {
 		padding: 0 1rem;
 		width: 100%;
 		position: absolute;
 		left: 0;
-		top: calc(920 / 1265 * 100%);
+		top: calc(915 / 1285 * 100%);
 	}
 	.card-body {
 		padding: 1.5rem;

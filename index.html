@@ -12,34 +12,41 @@
 
 <body>
 <div id="wrapper">
-	<header class="position-relative">
-		<div class="countdown text-center" data-seconds="5" style="color:#ffed78;font-size:1.25rem;">書籍２冊無料プレゼント ： <br class="d-block d-md-none">
-			<span class="time text-white">終了まであと６分２９秒</span>
-		</div>
-		<div class="countdown-img">
-			<img src="images/header-on-pc.jpg" class="img-fluid d-none d-md-block mx-auto">
-			<img src="images/header-on-mobile.jpg" class="img-fluid d-md-none">
-		</div>
-		<form id="header-form">
-			<div>
-				<input type="text" class="d-block w-100 p-4 p-md-2 mb-1 mb-lg-2 text-center" placeholder="メールアドレス"> 
-				<input type="image" src="images/form-btn-mobile.png" class="img-fluid d-block animated infinite pulse slow">
+	<header>
+		<!-- 倒數計時功能，不需要的版本刪除即可-->
+		<section>
+			<div class="countdown text-center font-weight-bold" data-seconds="5">書籍２冊無料プレゼント ： <br class="d-block d-md-none">
+				<span class="time text-white">終了まであと６分２９秒</span>
 			</div>
-			<div class="form-text d-md-flex flex-wrap justify-content-center mt-4 mt-md-2">
-				<div><span class="text-primary">■</span>  LINE@登録後すぐにもらえます</div>
-				<div><span class="text-primary">■</span>  購読無料でいつでも解除できます</div>
+		</section>
+		<!-- 倒數計時功能，不需要的版本刪除即可-->
+
+		<section class="position-relative">
+			<div class="countdown-img">
+				<img src="images/header-on-pc.jpg" class="img-fluid d-none d-md-block mx-auto">
+				<img src="images/header-on-mobile.jpg" class="img-fluid d-md-none">
 			</div>
-		</form>
+			<form id="header-form">
+				<div>
+					<input type="text" class="d-block w-100 p-4 p-md-1 p-lg-3 mb-1 mb-lg-2 text-center" placeholder="メールアドレス"> 
+					<input type="image" src="images/form-btn-mobile.png" class="img-fluid d-block animated infinite pulse slow">
+				</div>
+				<div class="form-text d-md-flex flex-wrap justify-content-center mt-1 mt-md-2">
+					<div><span class="text-primary">■</span>  LINE@登録後すぐにもらえます</div>
+					<div><span class="text-primary">■</span>  購読無料でいつでも解除できます</div>
+				</div>
+			</form>
+		</section>
 	</header>
 
 	<main>
-		<section class="alt pb-5">
-			<div class="container">
-				<div>
-					<img src="images/info-title-01-pc.jpg" class="img-fluid d-none d-md-block mx-auto">
-					<img src="images/info-title-01-mobile.jpg" class="img-fluid d-md-none">
+		<section id="info" class="pb-lg-5" style="background:linear-gradient(180deg, #f9fafa 40%, #fff 45%);">
+			<div class="container px-0">
+				<div class="py-3">
+					<img src="images/info-title-01-pc.png" class="img-fluid d-none d-md-block mx-auto">
+					<img src="images/info-title-01-mobile.png" class="img-fluid d-md-none">
 				</div>
-				<div class="row">
+				<div class="row mx-0 px-3">
 					<div class="col-md-6">
 						<img src="images/info-img-01-pc.jpg" class="img-fluid d-none d-md-block mx-auto">
 						<img src="images/info-img-01-mobile.jpg" class="img-fluid d-md-none">
@@ -50,16 +57,30 @@
 					</div>
 				</div>
 				<div class="my-4">
-					<img src="images/info-title-02-pc.jpg" class="img-fluid d-none d-md-block mx-auto">
-					<img src="images/info-title-02-mobile.jpg" class="img-fluid d-md-none">
+					<img src="images/info-title-02-pc.png" class="img-fluid d-none d-md-block mx-auto">
+					<img src="images/info-title-02-mobile.png" class="img-fluid d-md-none">
 				</div>
 				<div>
 					<img src="images/info-img-02-pc.jpg" class="img-fluid d-none d-md-block mx-auto">
-					<img src="images/info-img-02-mobile.jpg" class="img-fluid d-md-none">
+					<!-- <img src="images/info-img-02-mobile.jpg" class="img-fluid d-md-none"> -->
+					<div class="px-3 d-md-none">
+						<div class="position-relative">
+							<img src="images/info-img-0201-mobile.jpg" class="img-fluid">
+							<div class="img-text"><span>根本的な“健康体”となり、無敵の免疫力を獲得する</span></div>
+						</div>
+						<div class="position-relative">
+							<img src="images/info-img-0202-mobile.jpg" class="img-fluid">
+							<div class="img-text">脳科学で実証済みの“異次元集中”“超記憶メソッド”等、 脳力開発術を実践</div>
+						</div>
+						<div class="position-relative">
+							<img src="images/info-img-0203-mobile.jpg" class="img-fluid">
+							<div class="img-text">才能の開花・潜在意識の書き換えにより、天才脳が覚醒し、目標達成術との組み合わせによりあらゆる願望を達成する。</div>
+						</div>
+					</div>
 				</div>
-				<div class="my-4">
-					<img src="images/info-title-03-pc.jpg" class="img-fluid d-none d-md-block mx-auto">
-					<img src="images/info-title-03-mobile.jpg" class="img-fluid d-md-none">
+				<div class="py-4 bg-white">
+					<img src="images/info-title-03-pc.png" class="img-fluid d-none d-md-block mx-auto">
+					<img src="images/info-title-03-mobile.png" class="img-fluid d-md-none">
 				</div>
 				<div>
 					<img src="images/info-img-03-pc.jpg" class="img-fluid d-none d-md-block mx-auto">
@@ -129,12 +150,12 @@
 			</div>
 		</section>
 
-		<section id="bonus" class="pb-md-4" style="background: rgb(225, 225, 223);">
+		<section id="bonus" class="pb-md-4">
 			<div>
 				<img src="images/bonus-header-pc.jpg" class="img-fluid d-none d-md-block mx-auto">
 				<img src="images/bonus-header-mobile.jpg" class="img-fluid d-md-none">
 			</div>
-			<div class="container mt-5">
+			<div class="container mt-md-5 px-0 px-md-3">
 				<div class="bonus my-md-4">
 					<div>
 						<img src="images/bonus-title-01-pc.jpg" class="img-fluid d-none d-md-block mx-auto">
@@ -145,8 +166,8 @@
 						<div class="media-body pt-4 py-md-0">
 							<div class="row">
 								<div class="col">
-									<h5>第１章</h5>
-									<ul>
+									<h6>第１章</h6>
+									<ul class="chapter-list">
 										<li>最高のコンディションを獲得する睡眠術</li>
 										<li>睡眠時間は何時間がいいか？</li>
 										<li>短時間睡眠の弊害とは？</li>
@@ -162,8 +183,8 @@
 									</ul>
 								</div>
 								<div class="col">
-									<h5>第２章</h5>
-									<ul>
+									<h6>第２章</h6>
+									<ul class="chapter-list">
 										<li>最高のコンディションを獲得する食事術</li>
 										<li>炭水化物中毒を治すには、どうしたらいいか？</li>
 										<li>炭水化物中毒改善法その１体質を変える！</li>
@@ -231,7 +252,7 @@
 					<input type="text" class="d-block w-100 p-3 p-lg-2 mb-1 mb-lg-2 text-center" placeholder="メールアドレス"> 
 					<input type="image" src="images/form-btn.png" class="img-fluid d-block animated infinite pulse slow">
 				</div>
-				<div class="form-text px-2 mt-3 mt-lg-2">
+				<div class="form-text px-2 mt-1 mt-lg-2">
 					<div><span class="text-white">■  LINE@登録後すぐにもらえます</span></div>
 					<div><span class="text-white">■  購読無料でいつでも解除できます</span></div>
 				</div>
@@ -242,8 +263,8 @@
 
 	<footer>
 		<p class="my-1">
-			<a href="#" target="_blank">特定商取引法</a>｜
-			<a href="#" target="_blank">プライバシーポリシー</a>
+			<a href="http://pb-master.com/lp/04/tokusho.html" target="_blank">特定商取引法</a>｜
+			<a href="https://pb-master.com/lp/fb01/privacy.htm" target="_blank">プライバシーポリシー</a>
 		</p>
 		<p>Copyright &copy; All Rights Reserved.</p>
 	</footer>
@@ -274,7 +295,7 @@ $(function() {
 			element.find('.time').html(`終了まであと<span>${paddingZero(mm)}</span>分<span>${paddingZero(ss)}</span>秒<span>${paddingZero(ms)}</span>`).show();
 		}else{
 			clearInterval(interval);
-			element.hide();
+			//element.hide();
 			$('.countdown-img img').attr('src', function(i, v) {
 				return v.replace('on', 'off');
 			});
