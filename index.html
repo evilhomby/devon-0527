@@ -15,7 +15,7 @@
 	<header>
 		<!-- 倒數計時功能，不需要的版本刪除即可-->
 		<section>
-			<div class="countdown text-center font-weight-bold" data-seconds="5">書籍２冊無料プレゼント ： <br class="d-block d-md-none">
+			<div class="countdown text-center font-weight-bold" data-seconds="390">書籍２冊無料プレゼント ： <br class="d-block d-md-none">
 				<span class="time text-white">終了まであと６分２９秒</span>
 			</div>
 		</section>
@@ -296,6 +296,7 @@ $(function() {
 		}else{
 			clearInterval(interval);
 			//element.hide();
+			element.find('.time').html('終了まであとわずか');
 			$('.countdown-img img').attr('src', function(i, v) {
 				return v.replace('on', 'off');
 			});
